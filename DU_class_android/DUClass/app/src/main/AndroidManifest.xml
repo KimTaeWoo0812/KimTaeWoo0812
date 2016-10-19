@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="duclass.duclass">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon2"
+        android:label="DU여론"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true">
+        <activity
+            android:name="duclass.duclass.a3_login_join.RoadingSplash"
+            android:launchMode="standard"
+            android:label="DU여론">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="duclass.duclass.a3_login_join.Join_new_Activity">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a3_login_join.MainActivity">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a3_login_join.Join_Us"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a5_search_make.SearchPageActivity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a4_mainpage.MainPageActivity"
+            android:label="검색">
+        </activity>
+
+        <activity
+            android:name="duclass.duclass.a5_search_make.MakePageActivity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a6_lecture.LectureActivity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a7_opinion_option.Option"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a7_opinion_option.User_Opinion_Activity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a8_ranking.RankingActivity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a9_restaurant_list.Restaurant_Activity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a10_restaurant_menu.menu_Activity"
+            android:windowSoftInputMode="adjustResize"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a10_restaurant_menu.menu_for_personnel_Activity"
+            android:label="검색">
+        </activity>
+        <activity
+            android:name="duclass.duclass.a11_restaurant_review.restaurant_review_Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="검색">
+        </activity>
+
+        <activity
+            android:name="duclass.duclass.a12_chatting.chatting_Activity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="검색">
+        </activity>
+
+        <!--<receiver android:name =".a1_sub_class.Broadcast_Receiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+    </application>
+
+</manifest>

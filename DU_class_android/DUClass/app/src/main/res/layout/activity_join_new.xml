@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:background="#00BAFF"
+        android:padding="10dp"
+        android:text="회원가입 "
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="대구대학교 학생입니까?" />
+    <CheckBox
+        android:id="@+id/checkBox_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/textView_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="핸드폰 번호를 회원 고유번호로 쓰는데 동의하십니까?" />
+    <CheckBox
+        android:id="@+id/checkBox_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동의"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:textSize="22dp" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="별명:" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="글 작성시 공개되는 가명"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00BAFF"
+        android:onClick="onClick"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="가입"
+        android:layout_gravity="center"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_2"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/textView_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00BAFF"
+        android:textStyle="bold"
+        android:text="이전에 가입한 회원정보 연동" />
+    </LinearLayout>
+
+
+</LinearLayout>

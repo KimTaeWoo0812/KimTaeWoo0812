@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8" >
+
+        <LinearLayout
+            android:id="@+id/Btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00BAFF"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp" 
+                android:src="@drawable/c1" />
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="강의 조회"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00BAFF"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@drawable/r1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="과목평점\n   랭킹"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8" >
+
+
+        <LinearLayout
+            android:id="@+id/Btn_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#00BAFF"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:src="@drawable/c5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="교내 식당"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/btn_review"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#00BAFF"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DU 톡"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp" />
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Btn3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#00BAFF"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100% 익명성이 보장됩니다!"
+            android:textStyle="bold"
+            android:textColor="#FF4081"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

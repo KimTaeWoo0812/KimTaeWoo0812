@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#00BAFF"
+        android:padding="10dp"
+        android:text="랭킹"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/Btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="#00BAFF"
+            android:onClick="onClick"
+            android:text="학생 식당"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/Btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:background="#00BAFF"
+            android:onClick="onClick"
+            android:text="교직원 식당"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.4"
+            android:padding="10dp"
+            android:text="순위 "
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/textView334"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.3"
+            android:padding="10dp"
+            android:text="식당"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/textView3344"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.3"
+            android:padding="10dp"
+            android:text="평균 별점(max:5)"
+            android:textColor="#808080" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linearLayout" >
+    </ListView>
+
+</LinearLayout>
